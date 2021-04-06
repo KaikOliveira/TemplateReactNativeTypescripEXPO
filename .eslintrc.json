@@ -1,12 +1,13 @@
 
 {
-    "env": {
+  "env": {
         "es2021": true
     },
     "extends": [
         "plugin:react/recommended",
         "airbnb",
-				"plugin:@typescript-eslint/recommended"
+				"plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended"
     ],
 		"globals": {
         "__DEV__": "readonly"
@@ -22,12 +23,14 @@
     "plugins": [
         "react",
 				"react-hooks",
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "prettier"
     ],
     "rules": {
 			"react-hooks/rules-of-hooks": "error",
       "react/style-prop-object": "off",
 	    "react-hooks/exhaustive-deps": "warn",
+      "prettier/prettier": "error",
 	    "react/jsx-filename-extension": [
 	      1,
 	      {
